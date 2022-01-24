@@ -118,7 +118,7 @@ footer{
   }
 
   .logo-blanco{
-    width: 40%;
+    width: 35%;
   }
   
   
@@ -137,7 +137,35 @@ footer{
 
   /* TIENDA VIRTUAL */
 
- 
+  .categorias{
+    width: 70%;
+  }
+
+  .dropdown-menu{
+    width: 67%;
+  }
+
+  .categorias-productos{
+  
+  }
+
+ .producto{
+   margin-left: 0px;
+   margin-right: 0px;
+   width: 200px;
+   height: 300px;
+ }
+
+ .articulo{
+   width: 100%;
+ }
+
+
+ /* NOVEDADES */
+
+ .novedad-imagen{
+   width: 100%;
+ }
 
 
 
