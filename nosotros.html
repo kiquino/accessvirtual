@@ -41,25 +41,27 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="hidden">
+  <body>
     <!-- HOME -->
-      <!-- CARGA PREVIA -->
-      <div class="centrado" id="onload">
-        <div class="d-flex justify-content-center text-warning">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
+    <!-- CARGA PREVIA -->
+    <div class="centrado" id="onload">
+      <div class="d-flex justify-content-center text-warning">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
         </div>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/webaccess/public/js/preloader.js"></script>
     <!-- ENCABEZADO -->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient">
         <div class="container-fluid">
-         <a class="" href="index.html"><img
+          <a class="" href="index.html"><img
             class="logo"
             src="/webaccess/public/img/logo.png"
             alt="logo access"
-          /></a> 
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -153,96 +155,81 @@
       </li>
     </ul>
 
-    <!-- CAROUSEL -->
+<!-- NOSOTROS -->
 
-    <div
-      id="carouselExampleControls"
-      class="carousel slide pt-1"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/webaccess/public/img/banner.png"
-            class="d-block w-100"
-            alt="..."
-          />
+    <!-- NAV DE NOSOTROS -->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">INICIO / NOSOTROS</a>
         </div>
-        <div class="carousel-item">
+      </nav>
+  
+      <div class="container-fluid pt-2 pb-2">
+        <div class="card container-fluid" style="width: 90%">
           <img
-            src="/webaccess/public/img/banner1.png"
-            class="d-block w-100"
+            src="/webaccess/public/img/nosotros.jpg"
+            class="card-img-top"
             alt="..."
           />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/webaccess/public/img/banner2.png"
-            class="d-block w-100"
-            alt="..."
-          />
+          <div class="card-body">
+            <p class="card-text">
+              Somos una empresa argentina, nacida hace más de 20 años en la ciudad
+              de Rivadavia (Mendoza), con el objetivo de cubrir las necesidades
+              informáticas insatisfechas de las Empresas, logrando su inmediata
+              aceptación y habiendo alcanzado en la actualidad una exitosa
+              proyección a nivel nacional. Los efectos de la globalización han
+              producido la aparición de diversos productos y servicios en
+              distintos lugares del mundo. La creatividad es la base principal
+              para captar las tendencias de los mercados más exigentes. Hoy en día
+              es necesario contar con herramientas tecnológicas que nos permitan
+              hacer frente a la alta competitividad imperante. Es nuestra misión
+              primordial la incorporación e implementación de Tecnologías de
+              Avanzada e Integración de Sistemas para la concreción de las metas
+              trazadas. Contando con un eficiente y capacitado grupo de
+              colaboradores y coordinando cada uno de los sectores de la empresa,
+              desde la investigación hasta los servicios post venta; se logra el
+              cumplimiento de metas inmediatas y la concreción de nuestra misión
+            </p>
+          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"></span><img src="/webaccess/public/img/btn-atras.png" alt="">
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span><img src="/webaccess/public/img/btn-siguiente.png" alt="">
-      </button>
-    </div>
 
-    <!-- PRODUCTOS PEQUEÑOS CON PRECIOS -->
+<!-- FOOTER -->
 
-    <!-- AGRUPACION DE CATEGORIAS EN 4 TARJETAS GRANDES -->
-    
-    <!-- FOOTER -->
 
-    <footer class="footer">
-      <div>
-        <img
-          class="logo-blanco"
-          src="/webaccess/public/img/logo-blanco.png"
-          alt="access"
-        />
-      </div>
+<footer class="footer">
+  <div>
+    <img
+      class="logo-blanco"
+      src="/webaccess/public/img/logo-blanco.png"
+      alt="access"
+    />
+  </div>
 
-      <ul class="row">
-        <li>
-          <h5>Mapa del Sitio</h5>
+  <ul class="row">
+    <li>
+      <h5>Mapa del Sitio</h5>
 
-          <ul>
-            <li>NOSOTROS</li>
-            <li>SUCURSALES</li>
-            <li>SERVICIOS</li>
-            <li>NOVEDADES</li>
-            <li>TIENDA VIRTUAL</li>
-          </ul>
-        </li>
+      <ul>
+        <li>NOSOTROS</li>
+        <li>SUCURSALES</li>
+        <li>SERVICIOS</li>
+        <li>NOVEDADES</li>
+        <li>TIENDA VIRTUAL</li>
+      </ul>
+    </li>
 
-        <li>
-          <h5>Dirección</h5>
-          <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
+    <li>
+      <h5>Dirección</h5>
+      <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
           <p>Junin, Av. Mitre 8, Tel: (0263) 4498375</p>
           <p>San Martin, 25 de Mayo 252, Tel: (0263) 4428808 - 4420051</p>
-        </li>
-      </ul>
+    </li>
+  </ul>
 
-      <p>Copyright © All Rights Reserved</p>
-    </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/webaccess/public/js/preloader.js"></script>
-
-  </body>
+  <p>Copyright © All Rights Reserved</p>
+</footer>
+</body>
 </html>
+  

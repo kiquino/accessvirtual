@@ -7,6 +7,20 @@
 
 /* ENCABEZADO */
 
+.hidden{
+  overflow: hidden;
+  
+}
+
+.centrado{
+  height: 100vh;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 .logo{
     margin-left: 40px ;
@@ -166,6 +180,7 @@ footer{
  .novedad-imagen{
    width: 100%;
  }
+ 
 
 
 

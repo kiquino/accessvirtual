@@ -41,25 +41,27 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="hidden">
+  <body>
     <!-- HOME -->
-      <!-- CARGA PREVIA -->
-      <div class="centrado" id="onload">
-        <div class="d-flex justify-content-center text-warning">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
+    <!-- CARGA PREVIA -->
+    <div class="centrado" id="onload">
+      <div class="d-flex justify-content-center text-warning">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
         </div>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/webaccess/public/js/preloader.js"></script>
     <!-- ENCABEZADO -->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient">
         <div class="container-fluid">
-         <a class="" href="index.html"><img
+          <a class="" href="index.html"><img
             class="logo"
             src="/webaccess/public/img/logo.png"
             alt="logo access"
-          /></a> 
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -153,96 +155,111 @@
       </li>
     </ul>
 
-    <!-- CAROUSEL -->
 
-    <div
-      id="carouselExampleControls"
-      class="carousel slide pt-1"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/webaccess/public/img/banner.png"
-            class="d-block w-100"
-            alt="..."
-          />
+<!-- SUCURSALES -->
+
+    <!-- NAV DE SUCURSALES -->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">INICIO / SUCURSALES</a>
         </div>
-        <div class="carousel-item">
+      </nav>
+  
+      <!-- IMAGENES Y CONTENIDOS DE SUCURSALES -->
+  
+      <!-- SUCURSAL RIVADAVIA -->
+      <div class="container-fluid pt-2">
+        <div class="card container-fluid" style="width: 90%">
           <img
-            src="/webaccess/public/img/banner1.png"
-            class="d-block w-100"
+            src="/webaccess/public/img/sucursal_rivadavia.jpg"
+            class="card-img-top"
             alt="..."
           />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/webaccess/public/img/banner2.png"
-            class="d-block w-100"
-            alt="..."
-          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"></span><img src="/webaccess/public/img/btn-atras.png" alt="">
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span><img src="/webaccess/public/img/btn-siguiente.png" alt="">
-      </button>
-    </div>
-
-    <!-- PRODUCTOS PEQUEÑOS CON PRECIOS -->
-
-    <!-- AGRUPACION DE CATEGORIAS EN 4 TARJETAS GRANDES -->
-    
-    <!-- FOOTER -->
-
-    <footer class="footer">
-      <div>
-        <img
-          class="logo-blanco"
-          src="/webaccess/public/img/logo-blanco.png"
-          alt="access"
-        />
+  
+      <!-- SUCURSAL SAN MARTIN -->
+      <div class="container-fluid pt-2">
+        <div class="card container-fluid" style="width: 90%">
+          <img
+            src="/webaccess/public/img/sucursal_junin.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- SUCURSAL JUNIN -->
+      <div class="container-fluid pt-2 pb-2">
+        <div class="card container-fluid" style="width: 90%">
+          <img
+            src="/webaccess/public/img/sucursal_smartin.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
 
-      <ul class="row">
-        <li>
-          <h5>Mapa del Sitio</h5>
 
-          <ul>
-            <li>NOSOTROS</li>
-            <li>SUCURSALES</li>
-            <li>SERVICIOS</li>
-            <li>NOVEDADES</li>
-            <li>TIENDA VIRTUAL</li>
-          </ul>
-        </li>
 
-        <li>
-          <h5>Dirección</h5>
-          <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div>
+    <img
+      class="logo-blanco"
+      src="/webaccess/public/img/logo-blanco.png"
+      alt="access"
+    />
+  </div>
+
+  <ul class="row">
+    <li>
+      <h5>Mapa del Sitio</h5>
+
+      <ul>
+        <li>NOSOTROS</li>
+        <li>SUCURSALES</li>
+        <li>SERVICIOS</li>
+        <li>NOVEDADES</li>
+        <li>TIENDA VIRTUAL</li>
+      </ul>
+    </li>
+
+    <li>
+      <h5>Dirección</h5>
+      <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
           <p>Junin, Av. Mitre 8, Tel: (0263) 4498375</p>
           <p>San Martin, 25 de Mayo 252, Tel: (0263) 4428808 - 4420051</p>
-        </li>
-      </ul>
+    </li>
+  </ul>
 
-      <p>Copyright © All Rights Reserved</p>
-    </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/webaccess/public/js/preloader.js"></script>
-
-  </body>
+  <p>Copyright © All Rights Reserved</p>
+</footer>
+</body>
 </html>

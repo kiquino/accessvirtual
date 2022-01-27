@@ -41,25 +41,27 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="hidden">
-    <!-- HOME -->
-      <!-- CARGA PREVIA -->
-      <div class="centrado" id="onload">
-        <div class="d-flex justify-content-center text-warning">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
+  <body>
+    <!-- TIENDA VIRTUAL -->
+    <!-- CARGA PREVIA -->
+    <div class="centrado" id="onload">
+      <div class="d-flex justify-content-center text-warning">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
         </div>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/webaccess/public/js/preloader.js"></script>
     <!-- ENCABEZADO -->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient">
         <div class="container-fluid">
-         <a class="" href="index.html"><img
+          <a class="" href="index.html"><img
             class="logo"
             src="/webaccess/public/img/logo.png"
             alt="logo access"
-          /></a> 
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -145,7 +147,7 @@
       <li class="nav-item">
         <a
           class="nav-link"
-          href="tienda.html"
+          href="#tiendavirtual"
           tabindex="-1"
           aria-disabled="true"
           ><i class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a
@@ -153,96 +155,126 @@
       </li>
     </ul>
 
-    <!-- CAROUSEL -->
+  <!-- NAV DE LA TIENDA Y PAGINACION -->
 
-    <div
-      id="carouselExampleControls"
-      class="carousel slide pt-1"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+  <nav class="navbar navbar-light bg-light" id="#tiendavirtual">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        >INICIO / TIENDA VIRTUAL / OFERTAS ORDENAR POR: PRECIOS >> 1 2 3</a
+      >
+    </div>
+  </nav>
+
+  <!-- CATEGORIAS TIENDA -->
+
+  <div class="container tienda-virtual">
+    <div class="row categorias-productos">
+      <div class="dropdown">
+        <button
+          class="categorias btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          CATEGORIAS
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">OFERTAS</a></li>
+          <li>
+            <a class="dropdown-item" href="#">ACEESORIOS PARA VEHICULOS</a>
+          </li>
+          <li><a class="dropdown-item" href="#">ALMACENAMIENTO</a></li>
+          <li><a class="dropdown-item" href="#">AUDIO Y VIDEO</a></li>
+          <li><a class="dropdown-item" href="#">AURICULARES</a></li>
+          <li><a class="dropdown-item" href="#">CABLES</a></li>
+          <li><a class="dropdown-item" href="#">CARTUCHOS</a></li>
+        </ul>
+      </div>
+      <div class="row productos">
+        <div class="producto col-5 productos bg-success p-2 m-2">
           <img
-            src="/webaccess/public/img/banner.png"
-            class="d-block w-100"
-            alt="..."
+            class="articulo"
+            src="/webaccess/public/img/contadora-de-billetes.png"
+            alt=""
           />
         </div>
-        <div class="carousel-item">
+        <div class="producto col-5 productos bg-info p-2 m-2">
           <img
-            src="/webaccess/public/img/banner1.png"
-            class="d-block w-100"
-            alt="..."
+            class="articulo"
+            src="/webaccess/public/img/impresora-epson.png"
+            alt=""
           />
         </div>
-        <div class="carousel-item">
+        <div class="producto col-5 productos bg-danger p-2 m-2">
           <img
-            src="/webaccess/public/img/banner2.png"
-            class="d-block w-100"
-            alt="..."
+            class="articulo"
+            src="/webaccess/public/img/notebook-hp.png"
+            alt=""
+          />
+        </div>
+        <div class="producto col-5 productos bg-warning p-2 m-2">
+          <img
+            class="articulo"
+            src="/webaccess/public/img/parlante-jbl.png"
+            alt=""
+          />
+        </div>
+        <div class="producto col-5 productos bg-warning p-2 m-2">
+          <img
+            class="articulo"
+            src="/webaccess/public/img/parlante-jbl1.png"
+            alt=""
+          />
+        </div>
+        <div class="producto col-5 productos bg-warning p-2 m-2">
+          <img
+            class="articulo"
+            src="/webaccess/public/img/NOTE-ASUS.png"
+            alt=""
           />
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"></span><img src="/webaccess/public/img/btn-atras.png" alt="">
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span><img src="/webaccess/public/img/btn-siguiente.png" alt="">
-      </button>
+    </div>
+  </div>
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <footer class="footer">
+    <div>
+      <img
+        class="logo-blanco"
+        src="/webaccess/public/img/logo-blanco.png"
+        alt="access"
+      />
     </div>
 
-    <!-- PRODUCTOS PEQUEÑOS CON PRECIOS -->
+    <ul class="row">
+      <li>
+        <h5>Mapa del Sitio</h5>
 
-    <!-- AGRUPACION DE CATEGORIAS EN 4 TARJETAS GRANDES -->
-    
-    <!-- FOOTER -->
+        <ul>
+          <li>NOSOTROS</li>
+          <li>SUCURSALES</li>
+          <li>SERVICIOS</li>
+          <li>NOVEDADES</li>
+          <li>TIENDA VIRTUAL</li>
+        </ul>
+      </li>
 
-    <footer class="footer">
-      <div>
-        <img
-          class="logo-blanco"
-          src="/webaccess/public/img/logo-blanco.png"
-          alt="access"
-        />
-      </div>
-
-      <ul class="row">
-        <li>
-          <h5>Mapa del Sitio</h5>
-
-          <ul>
-            <li>NOSOTROS</li>
-            <li>SUCURSALES</li>
-            <li>SERVICIOS</li>
-            <li>NOVEDADES</li>
-            <li>TIENDA VIRTUAL</li>
-          </ul>
-        </li>
-
-        <li>
-          <h5>Dirección</h5>
-          <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
+      <li>
+        <h5>Dirección</h5>
+        <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
           <p>Junin, Av. Mitre 8, Tel: (0263) 4498375</p>
           <p>San Martin, 25 de Mayo 252, Tel: (0263) 4428808 - 4420051</p>
-        </li>
-      </ul>
+      </li>
+    </ul>
 
-      <p>Copyright © All Rights Reserved</p>
-    </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/webaccess/public/js/preloader.js"></script>
-
-  </body>
+    <p>Copyright © All Rights Reserved</p>
+  </footer>
+</body>
 </html>
