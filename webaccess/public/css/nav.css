@@ -34,18 +34,25 @@
 
 .search {
   width: 25%;
-  margin: 40px;
+  margin: 40px; 
+}
+
+.nav-item a{
+  color: white !important;
+  margin: 10px;
+  
 }
 
 .fas {
   color: white;
-  padding-right: 15px;
+  padding: 0px 0px 10px 0px;
 }
 
 .sesion {
   color: white;
   margin: 40px;
 }
+
 
 .instagram,
 .whatsapp,
@@ -56,6 +63,27 @@
 ::placeholder {
   font-size: 18px;
   font-weight: 700;
+}
+
+
+@media(max-width: 992px){
+  .logo {
+    width: 50%;
+    margin-left: 310px;
+  }
+}
+
+@media(max-width: 768px){
+  .logo {
+    width: 50%;
+    margin-left: 210px;
+  }
+}
+@media(max-width: 576px){
+  .logo {
+    width: 50%;
+    margin-left: 105px;
+  }
 }
 
 /* NAVEGADOR */
